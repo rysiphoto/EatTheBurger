@@ -1,50 +1,66 @@
-<section class="hero">
-  <div class="dark">
-    <div class="container" id="container">
+<div id="container">
+  <section class=" hero">
+    <div class="dark">
+      <div class="container" id="container">
+        <p>
+          <h1><b>Burgers!</b></h1>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="columns">
+    <div class="column">
       <p>
-        <h1>Burgers!</h1>
+        <img src="https://media1.giphy.com/media/26uf69FW691wALCVi/giphy.gif" alt="Bob Belcher">
       </p>
     </div>
-  </div>
-</section>
-
-<p>
-  <img src="https://media1.giphy.com/media/26uf69FW691wALCVi/giphy.gif">
-</p>
-
-<h2>Burgers that are ready to be demolished!</h2>
-
-<ul>
-  {{#each burgers}}
-  {{#unless eaty}}
-  {{> burgers/burger-block eat=true}}
-  {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Burgers that have been crushed!</h2>
-
-<ul>
-  {{#each burgers}}
-  {{#if eaty}}
-  {{> burgers/burger-block eat=false}}
-  {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="bu">Burger Name:</label>
-    <input type="text" id="bu" name="name">
+    <div class="column">
+      <p>
+        <h2><b>Burgers that are ready to be demolished!</b></h2>
+      </p>
+      <ul>
+        {{#each burgers}}
+        {{#unless eaty}}
+        {{> burgers/burger-block eat=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="slee">Ready to be eaten?</label><br>
-    <input type="radio" name="eaty" value="1" checked> Yup!<br>
-    <input type="radio" name="eaty" value="0"> Too late!
-  </div>
+  <div class="columns">
+    <div class="column">
+      <p>
+        <h2><b>Add a Burger</b></h2>
+        <form class="create-form">
 
-  <button type="submit">Add burger</button>
-</form>
+          <div class="form-group">
+            <label for="bu">Burger Name:</label>
+            <input type="text" id="bu" name="name">
+          </div>
+
+          <div class="form-group">
+            <label for="slee"><b>Ready to be eaten?</b></label><br>
+            <input type="radio" name="eaty" value="1" checked> Too late!<br>
+            <input type="radio" name="eaty" value="0"> Yup!
+          </div>
+
+          <button type="submit">Add burger</button>
+        </form>
+      </p>
+    </div>
+    <div class="column">
+      <p>
+        <h2><b>Burgers that have been crushed!</b></h2>
+      </p>
+      <ul>
+        {{#each burgers}}
+        {{#if eaty}}
+        {{> burgers/burger-block eat=false}}
+        {{/if}}
+        {{/each}}
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -10,7 +10,7 @@
 # **Eat The Burger**
 
 ### **Project Description:**
-##### This website takes burger names entered by the user, stores the names in an SQL database and puts them in one of two categories. You can then move them from one category to the other by clicking on their button, or delete them from the SQL database all together.
+##### This website takes burger names entered by the user, stores the names in an SQL database and puts them in one of two categories. You can then move them from one category to the other by clicking on their button, or delete them from the SQL database all together. Site has been deployed on Heroku.
 ---
 ### **GitHub Address:**
 [Eat The Burger](https://github.com/rysiphoto/EatTheBurger)

@@ -22,6 +22,9 @@
 ### **Dependencies**
 ##### npm i
 ---
+### **Technologies Used**
+##### Node.js, JavaScript, HTML, CSS, ORM, MySQL, MERN, Ajax, JSON, Handlebars
+---
 ### **Test Run Commands**
 ##### node server
 ---
